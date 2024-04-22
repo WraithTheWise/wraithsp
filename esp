@@ -50,7 +50,7 @@ local function DrawESP(plr)
     Box.PointC = Vector2.new(0, 0)
     Box.PointD = Vector2.new(0, 0)
     Box.Color = Color3.fromRGB(255, 255, 255)
-    Box.Thickness = 2
+    Box.Thickness = 1
     Box.Transparency = 1
     local highlight = Instance.new("Highlight")
     
@@ -94,7 +94,7 @@ local function DrawESP(plr)
                     Name.Visible = false 
                 end
                 
-                Name.Text = string.format(plr.Name.." ["..tostring(math.floor(Distance*0.28)).."m]")
+                Name.Text = string.format(plr.Name.." ["..tostring(math.floor(Distance*0.28)).."s]")
                  
                 local PartCorners = GetPartCorners(plr.Character.HumanoidRootPart)
                 local VectorTR, OnScreenTR = Camera:WorldToScreenPoint(PartCorners.TR)
